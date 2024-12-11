@@ -22,11 +22,8 @@ public sealed partial class ThiefUndeterminedBackpackComponent : Component
     public List<int> SelectedSets = new();
 
     [DataField]
-    public SoundSpecifier ApproveSound = new SoundPathSpecifier("/Audio/Effects/rustle1.ogg");
+    public int maxSelectedSets; // Imperial MaximumSets
 
-    /// <summary>
-    /// Max number of sets you can select.
-    /// </summary>
     [DataField]
-    public int MaxSelectedSets = 2;
+    public SoundSpecifier ApproveSound = new SoundPathSpecifier("/Audio/Effects/rustle1.ogg");
 }
